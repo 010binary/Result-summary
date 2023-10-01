@@ -1,0 +1,136 @@
+*, *::after, *::before{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+body{
+    color: #000;
+}
+footer{
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    color: black;
+    height: 480px;
+    width: 700px; /* see where to fix the width */
+    margin: 80px auto;
+    display: flex;
+    overflow: auto;
+    box-shadow: 10px 10px 30px rgba(149, 148, 148, 0.726);
+}
+.text{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 5px;
+}
+h2{
+    font-size: 1.5rem;
+    margin: 20px 5px;
+}
+.circle{
+    background-color: hsla(256, 74%, 32%, 0.621);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 40px auto;
+    overflow: clip;
+}
+.circle p span{
+    font-size: 5rem;
+    display: block;
+    font-weight: 700;
+    color: white;
+    
+}
+.circle p{
+    padding-top: 40px;
+    text-align: center;
+    color: rgb(179, 177, 177);
+}
+.blueSide{
+    background-color: hsl(252, 100%, 67%);
+    color: rgb(237, 237, 237);
+    border-radius: 20px;
+    flex-basis: 350px;
+}
+.whiteSide{
+    background-color: white;
+    border-radius: 20px;
+    flex-basis: 350px;
+    padding: 0px 10px;
+    
+}
+.reaction{
+    background-color:hsla(0, 100%, 67%, 0.11);
+    color: hsla(0, 100%, 67%, 2);
+}
+.memory{
+    background-color:hsla(39, 100%, 56%, 0.11);
+    color: hsla(39, 100%, 56%, 2);;
+}
+.verbal{
+    background-color:hsla(166, 100%, 37%, 0.11);
+    color: hsla(166, 100%, 37%, 2);
+}
+.visual{
+    background-color: hsla(234, 85%, 45%, 0.11);
+    color: hsla(234, 85%, 45%, 2);
+}
+.h{
+    color: rgb(133, 132, 132)
+}
+.result{
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 14px 0px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.great{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+.inside{
+    text-align: center;
+    margin: 15px 20px;
+}
+.btn{
+    padding: 10px 95px;
+    width: 100%;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: transform 0.7s;
+    background-color: hsl(252, 59%, 26%);
+}
+.btn:hover{
+    background-color: hsl(252, 100%, 67%);
+    transform: scale(1.03);
+}
+svg{
+    margin-left: 5px;
+}
+@media screen and (max-width: 720px) {
+    .container{
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+        border-radius: 0px;
+        width: 100%;
+    }
+    .blueSide{
+        border-radius: 0px 0px 30px 30px;
+    }
+}
